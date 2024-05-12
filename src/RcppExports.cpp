@@ -5,6 +5,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // metaphone_internal
 Rcpp::CharacterVector metaphone_internal(Rcpp::CharacterVector word, int maxCodeLen);
 RcppExport SEXP _phonics_metaphone_internal(SEXP wordSEXP, SEXP maxCodeLenSEXP) {

@@ -9,6 +9,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.1041982-success.svg)](https://dx.doi.org/10.5281/zenodo.1041982)
 [![JOSS Status](http://joss.theoj.org/papers/13e41c9bd376fe2fc948f8af10b138b6/status.svg)](https://joss.theoj.org/papers/10.21105/joss.00480)
 [![JSS Status](https://img.shields.io/badge/JSS-10.18637%2Fjss.v095.i08-success.svg)](https://dx.doi.org/10.18637/jss.v095.i08)
+[![James Howard](https://jameshoward.us/assets/img/identity/jameshoward-badge.svg)](https://jameshoward.us)
 
 This is the R package to support phonetic spelling algorithms in R.
 Several packages provide the Soundex algorithm.  However, other
@@ -22,7 +23,7 @@ phonetic spelling and test phonetic similarity.
   * Caverphone 2
 * Cologne (Kölner)
 * Lein
-* Match Rating Approach
+* Match Rating Approach]
   * Encoder
   * Comparison
 * Metaphone

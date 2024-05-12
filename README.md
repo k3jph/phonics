@@ -2,7 +2,8 @@
 
 ![CRAN/METACRAN](https://img.shields.io/cran/v/phonics)
 [![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/phonics)](https://cran.r-project.org/package=phonics)
-[![Build Status](https://github.com/k3jph/phonics-in-r/actions/workflows/check-release.yaml/badge.svg?branch=main)](https://github.com/k3jph/phonics-in-r/actions/workflows/check-release.yaml)
+[![Build Status (main)](https://github.com/k3jph/phonics-in-r/actions/workflows/check-main.yaml/badge.svg?branch=main)](https://github.com/k3jph/phonics-in-r/actions/workflows/check-main.yaml)
+[![Build Status (develop)](https://github.com/k3jph/phonics-in-r/actions/workflows/check-develop.yaml/badge.svg?branch=develop)](https://github.com/k3jph/phonics-in-r/actions/workflows/check-develop.yaml)
 [![codecov](https://codecov.io/gh/k3jph/phonics-in-r/branch/main/graph/badge.svg)](https://codecov.io/gh/k3jph/phonics-in-r)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/08ad4c6ccb8d4bf59ca47b7524af04be)](https://app.codacy.com/gh/k3jph/phonics-in-r)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.1041982-success.svg)](https://dx.doi.org/10.5281/zenodo.1041982)

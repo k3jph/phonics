@@ -64,7 +64,7 @@ std::string metaphone_single(std::string x, int maxCodeLen, bool traditional) {
     std::string vowels = "AEIOU";
 
     std::string::iterator i;
-    std::string word = x.substr(), meta = "";
+    std::string word = x, meta = "";
     char lastChar = NULLCHAR;
 
     boost::trim(word);
@@ -75,7 +75,7 @@ std::string metaphone_single(std::string x, int maxCodeLen, bool traditional) {
      * null string is, itself, the null string.  The Metaphone of a
      * single character is itself, capitalized, as appropriate.
      */
-    for(i = word.begin(); i != word.end() && !isalpha(*i); i++);
+    for(i = word.begin(); i != word.end() && !isalpha(*i); ++i);
     if(i == word.end())
         return "";
     if(word.length() == 1)
@@ -112,7 +112,7 @@ std::string metaphone_single(std::string x, int maxCodeLen, bool traditional) {
     case 'O':
     case 'U':
         meta += cc;
-        i++;
+        ++i;
         break;
     }
 

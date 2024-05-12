@@ -37,7 +37,7 @@ std::string soundex_single(std::string x, int maxCodeLen) {
     boost::trim(x);
     boost::to_upper(x);
 
-    for(i = x.begin(); i != x.end() && !isalpha(*i); i++);
+    for(i = x.begin(); i != x.end() && !isalpha(*i); ++i);
     if(i == x.end())
         return "";
     if(x.length() == 1) {
@@ -49,7 +49,7 @@ std::string soundex_single(std::string x, int maxCodeLen) {
     code = *i;
     lastCode = SOUNDEX.at(*i - 'A');
 
-    for(i++; i != x.end(); ++i) {
+    for(++i; i != x.end(); ++i) {
         char currCode = *i - 'A';
         if(currCode < 0 || currCode > 25)
             break;
@@ -77,7 +77,7 @@ std::string refinedSoundex_single(std::string x, int maxCodeLen) {
     boost::trim(x);
     boost::to_upper(x);
 
-    for(i = x.begin(); i != x.end() && !isalpha(*i); i++);
+    for(i = x.begin(); i != x.end() && !isalpha(*i); ++i);
     if(i == x.end())
         return "";
     if(x.length() == 1)
@@ -86,7 +86,7 @@ std::string refinedSoundex_single(std::string x, int maxCodeLen) {
     code = *i;
     code += (lastCode = SOUNDEX.at(*i - 'A'));
 
-    for(i++; i != x.end(); ++i) {
+    for(++i; i != x.end(); ++i) {
         char currCode = *i - 'A';
         if(currCode < 0 || currCode > 25)
             break;

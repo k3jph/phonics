@@ -16,7 +16,6 @@ Description: Provides a collection of phonetic algorithms including
     Soundex, Metaphone, NYSIIS, Caverphone, and others.  The package is
     documented in <doi:10.18637/jss.v095.i08>.
 License: BSD_2_clause + file LICENSE
-LazyData: TRUE
 Imports:
     Rcpp (>= 0.12.1),
 	data.table

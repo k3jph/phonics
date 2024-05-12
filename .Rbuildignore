@@ -4,6 +4,7 @@
 paper.md
 paper.bib
 COPYRIGHT.md
+CITATION.cff
 ^.github
 ^_pkgdown\.yml$
 ^docs$
